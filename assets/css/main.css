@@ -144,7 +144,7 @@ input, select, textarea {
 		}
 
 	body {
-		color: #f00d0d;
+		color: #212931;
 	}
 
 	body, input, select, textarea {
@@ -177,7 +177,6 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		font-size: 4rem
 		margin: 0 0 2rem 0;
 	}
 
