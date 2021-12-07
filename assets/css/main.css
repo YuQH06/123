@@ -3611,92 +3611,167 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-	      margin: 10;
-	      padding: 0;
-	      list-style: none;
-          background: rgba(73, 11, 11, 0.493);
-	      height: 4rem;
-	      line-height: 40rem;
-	      position: relative;
-		  width: calc(100% - 0rem); 
-		  max-width: 72rem;  /* 方塊長度*/
-		  z-index: 100;
-		  left:185px;  /* 方塊向左*/
+		background: rgba(73, 11, 11, 0.493);
+		height: 4rem;
+		line-height: 4rem;
+		margin: -4rem auto 0 auto;
+		overflow: hidden;
+		padding: 0 2rem 0 0;
+		position: relative;
+		width: calc(100% - 4rem); 
+		max-width: 72rem;  /* 方塊長度*/
+		z-index: 100;
+	    /* 變化*/
+		list-style: none;
+        
    
+    }
+	#nav ul.divided li {
+		border-top-color: #ffffff;
+	}
+
+	#nav ul.icons li a.icon:hover:before {
+		color: #18bfef;
+	}
+
+	#nav ul.icons.alt li .icon:before {
+		box-shadow: inset 0 0 0 2px #ffffff;
+	}
+
+	#nav ul.icons.alt li a.icon:hover:before {
+		box-shadow: inset 0 0 0 2px #18bfef;
+	}
+
+	#nav input, #nav select, #nav textarea {
+		color: #ffffff;
+	}
+
+	#nav a {
+		color: #ffffff;
+		border-bottom-color: rgba(255, 255, 255, 0.5);
+	}
+
+	#nav a:hover {
+		border-bottom-color: transparent;
+		color: #18bfef !important;
+	}
+
+    #nav strong, #nav b {
+	    color: #ffffff;
+    }
+
+    #nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
+	    color: #ffffff;
+    }
+
+    #nav blockquote {
+	    border-left-color: #ffffff;
+    }
+
+    #nav code {
+	    background: rgba(255, 255, 255, 0.075);
+	    border-color: #ffffff;
+    }
+
+    #nav hr {
+	    border-bottom-color: #ffffff;
     }
   
   
   
 	#nav ul.drop-down-menu {
-		  border: rgb(204, 204, 204) 0px solid;
-		  display:inline-block;
-		  font-family: 'Open Sans', Arial, sans-serif;
-		  font-size:13px;
-		  -moz-flex-grow: 1;
-		     -webkit-flex-grow: 1;
-			  -ms-flex-grow: 1;
-			  flex-grow: 1;
-			  -moz-flex-shrink: 1;
-			  -webkit-flex-shrink: 1;
-			  -ms-flex-shrink: 1;
-			  flex-shrink: 1;
-			  font-family: "Source Sans Pro", Helvetica, sans-serif;
-			  font-weight: 900;
-			  letter-spacing: 0.08em;
-			  list-style: none;
-			  margin-bottom: 0;
-			  padding-left: 0;
-			  text-transform: uppercase;
-	 }
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+		-moz-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: 900;
+		letter-spacing: 0.075em;
+		list-style: none;
+		margin-bottom: 0;
+		padding-left: 0;
+		text-transform: uppercase; 
+        /* 變化*/
+		border: #ccc 0px solid;
+		font-size:13px;
+	}
   
 	#nav ul.drop-down-menu li {
-		  position: relative;
-		  white-space: nowrap;
-		  border-right: rgb(204, 204, 204) 0px solid;
-		  display: block;
-		  padding-left: 0;  /* 第一層按鈕間距*/
-	  
-	  }
+		display: block;
+		padding-left: 0;  /* 第一層按鈕間距*/
+		/* 變化*/
+		position: relative;
+		white-space: nowrap;
+		border-right: #ccc 0px solid;
+	}
   
-	#nav ul.drop-down-menu > li:last-child {
-		  border-right: none;
-	  }
   
-	#nav ul.drop-down-menu > li {
-		  float: left; /* 只有第一層是靠左對齊*/
-	  }
-  
-	#nav ul.drop-down-menu a {
-		           
-		    display: block;
-		    font-size: 1rem; /* 第一層字大小*/
-		    outline: none;
-	        background-color: rgba(78, 21, 21, 0.425);
-			color: rgb(253, 249, 249);
-			padding: 0 86.4px; /* 第一層寬*/
-			text-decoration: none;
-			line-height: 65px;  /* 第一層長*/
-  
-	  }
-	#nav ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
-		  background-color:  #333;
-		  color:#fff;
+	#nav ul.drop-down-menu li a  {
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;           
+		display: block;
+		font-size: 1rem; /* 第一層字大小*/
+		outline: none;
+		padding: 0 86.4px; /* 第一層寬*/
+		/* 變化*/
+	    background-color: rgba(78, 21, 21, 0.425);
+		color: rgb(253, 249, 249);
+		text-decoration: none;
+		
+  	}
+
+	#nav ul.drop-down-menu li a:hover { /* 滑鼠滑入按鈕變色*/
+		color: inherit !important;
+		background-color: rgba(255, 255, 255, 0.1);
+		/* 變化*/
 		border-bottom-color: transparent;
-		color: rgb(250, 249, 249) !important;
-	  }
+	}
+	
+	#nav ul.drop-down-menu li.active {
+		background-color: #ffffff;
+	}
+
+    #nav ul.drop-down-menu li.active a {
+		color: #1e252d;
+	}
+
+    #nav ul.drop-down-menu li.active a:hover {
+		color: #18bfef !important;
+	}
+	
+	#nav ul.icons {
+		-moz-flex-grow: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-grow: 0;
+		flex-grow: 0;
+		-moz-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		flex-shrink: 0;
+		margin-bottom: 0;
+	}
+	
+	@media screen and (max-width: 980px) {
   
-	#nav blockquote {
-			  border-left-color: #ffffff;
-		  }
-  
-	#nav code {
-			  background: rgba(194, 205, 207, 0.075);
-			  border-color: #ffffff;
-		  }
-	#nav hr {
-			  border-bottom-color: #ffffff;
-		  }
-  
+		#nav {  display: none;}
+	  
+	}   
+    
+
+    /* 變化*/
+
+	
 	#nav ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
 		  background-color: rgb(73, 11, 11);
 		  color:#fff;
@@ -3726,36 +3801,18 @@ input, select, textarea {
 		  display: block;
 		 
 	  }
-	#nav ul.drop-down-menu li.active {
-					  background-color: #ffffff;
-				  }
+	
+	
+
+	#nav ul.drop-down-menu > li:last-child {
+		border-right: none;
+	}
+	
+	#nav ul.drop-down-menu > li {
+		float: left; /* 只有第一層是靠左對齊*/
+	}	  
   
-	#nav ul.drop-down-menu li.active a {
-						  color: #1e252d;
-					  }
-  
-	#nav ul.drop-down-menu li.active a:hover {
-							  color: #18bfef !important;
-						  }
-	#nav ul.icons {
-			  -moz-flex-grow: 0;
-			  -webkit-flex-grow: 0;
-			  -ms-flex-grow: 0;
-			  flex-grow: 0;
-			  -moz-flex-shrink: 0;
-			  -webkit-flex-shrink: 0;
-			  -ms-flex-shrink: 0;
-			  flex-shrink: 0;
-			  margin-bottom: 0;
-		  }
-  
-	@media screen and (max-width: 980px) {
-  
-	#nav {
-				  display: none;
-			  }
-  
-		  }   
+	
   
 	
 	   
@@ -4538,7 +4595,7 @@ input, select, textarea {
 			color: #212931;
 		}
 
-			#navPanelToggle.alt:hover {
+		#navPanelToggle.alt:hover {
 				background-color: #ffffff;
 			}
 
