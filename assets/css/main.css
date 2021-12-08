@@ -3602,21 +3602,22 @@ input, select, textarea {
 /* Nav */
 
     #nav ul {
-		color: #ffffff;
+		color: #e2e450;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		
 		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
 		background: rgba(73, 11, 11, 0.493);
-		height: 4rem;
+		height: 13rem;
 		line-height: 4rem;
-		margin: -4rem auto 0 auto;
+		margin: auto;
 		overflow: hidden;
-		padding: 0 2rem 0 0;
+		padding: 0 0 0 0;
 		position: relative;
 		width: calc(100% - 4rem); 
 		max-width: 72rem;  /* 方塊長度*/
@@ -3631,7 +3632,7 @@ input, select, textarea {
 	}
 
 	#nav ul.icons li a.icon:hover:before {
-		color: #18bfef;
+		color: #632921;
 	}
 
 	#nav ul.icons.alt li .icon:before {
@@ -3648,7 +3649,7 @@ input, select, textarea {
 
 	#nav a {
 		color: #ffffff;
-		border-bottom-color: rgba(255, 255, 255, 0.5);
+		border-bottom-color: rgba(146, 33, 118, 0.5);
 	}
 
 	#nav a:hover {
@@ -3726,28 +3727,28 @@ input, select, textarea {
 		padding: 0 86.4px; /* 第一層寬*/
 		/* 變化*/
 	    background-color: rgba(78, 21, 21, 0.425);
-		color: rgb(253, 249, 249);
+		color: rgb(253, 249, 249);/* 第一層字顏色*/
 		text-decoration: none;
 		
   	}
 
 	#nav ul.drop-down-menu li a:hover { /* 滑鼠滑入按鈕變色*/
 		color: inherit !important;
-		background-color: rgba(255, 255, 255, 0.1);
+		background-color: rgb(238, 230, 230);
 		/* 變化*/
 		border-bottom-color: transparent;
 	}
 	
 	#nav ul.drop-down-menu li.active {
-		background-color: #ffffff;
+		background-color: none; /* 滑鼠滑入目前選單按鈕背景顏色*/
 	}
 
     #nav ul.drop-down-menu li.active a {
-		color: #1e252d;
+		color: #f5f9fd;
 	}
 
     #nav ul.drop-down-menu li.active a:hover {
-		color: #18bfef !important;
+		color: #e2e450 !important; /* 滑鼠滑入目前選單按鈕變色*/
 	}
 	
 	#nav ul.icons {
@@ -3774,7 +3775,7 @@ input, select, textarea {
 	
 	#nav ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
 		  background-color: rgb(73, 11, 11);
-		  color:#fff;
+		  color:#e2e450;
 	  }
   
 	#nav ul.drop-down-menu ul {
@@ -3782,8 +3783,8 @@ input, select, textarea {
 		  position: absolute;
 		  z-index: 99;
 		  left: 0px;
-		  top: 100%;
-		  min-width: 180px;
+		  top: 37%;
+		  min-width: 255px;
 	  }
   
 	 
