@@ -4754,7 +4754,7 @@ input, select, textarea {
 
 	}
 	.card{width:450px; height:337.5px;
-		background: rgb(0, 87, 128);
+		background: rgba(211, 201, 201, 0.733);
 		position: relative;
 		border-radius:20px;
 		cursor: pointer;
@@ -4779,7 +4779,7 @@ input, select, textarea {
 		transform: scale(0.9);
 		color: white;
 		border: 1px solid rgba(225, 225, 225, 0.164);
-		box-shadow:0 0 20px rgba(0, 0, 0, 0.144);
+		box-shadow:0 0 2px rgba(0, 0, 0, 0.144);
 		overflow: hidden;
 		transition: all .4s;							
 		}
