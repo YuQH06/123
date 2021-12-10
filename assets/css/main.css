@@ -3619,7 +3619,7 @@ input, select, textarea {
 		overflow: hidden;
 		padding: 0 0 0 0;
 		position: relative;
-		width: calc(100% - 4rem); 
+		width: calc(100% - 0rem); 
 		max-width: 72rem;  /* 方塊長度*/
 		z-index: 100;
 	    /* 變化*/
@@ -3708,7 +3708,7 @@ input, select, textarea {
   
 	#nav ul.drop-down-menu li {
 		display: block;
-		padding-left: 0;  /* 第一層按鈕間距*/
+		padding-left: 5;  /* 第一層按鈕間距*/
 		/* 變化*/
 		position: relative;
 		white-space: nowrap;
@@ -3724,9 +3724,9 @@ input, select, textarea {
 		display: block;
 		font-size: 1rem; /* 第一層字大小*/
 		outline: none;
-		padding: 0 86.4px; /* 第一層寬*/
+		padding: 0 122px; /* 第一層寬*/
 		/* 變化*/
-	    background-color: rgba(78, 21, 21, 0.425);
+	    background-color: rgba(85, 52, 52, 0.425);
 		color: rgb(253, 249, 249);/* 第一層字顏色*/
 		text-decoration: none;
 		
@@ -3734,7 +3734,7 @@ input, select, textarea {
 
 	#nav ul.drop-down-menu li a:hover { /* 滑鼠滑入按鈕變色*/
 		color: inherit !important;
-		background-color: rgb(238, 230, 230);
+		background-color: rgb(155, 19, 19);
 		/* 變化*/
 		border-bottom-color: transparent;
 	}
@@ -3774,17 +3774,17 @@ input, select, textarea {
 
 	
 	#nav ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
-		  background-color: rgb(73, 11, 11);
+		  background-color: rgb(255, 251, 251);
 		  color:#e2e450;
 	  }
   
 	#nav ul.drop-down-menu ul {
 		  border: #ccc 0px solid;
 		  position: absolute;
-		  z-index: 99;
-		  left: 0px;
+		  z-index: 101;
+		  left: 10px;
 		  top: 37%;
-		  min-width: 255px;
+		  min-width: 320px;
 	  }
   
 	 
