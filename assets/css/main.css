@@ -4684,6 +4684,7 @@ input, select, textarea {
 		}
 
 	}
+	/* card */
 	.card{width:450px; height:337.5px;
 		background: rgb(255, 255, 255);
 		position: relative;
